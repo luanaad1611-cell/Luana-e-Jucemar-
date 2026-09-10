@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site do casamento de Luana e Jucemar — 05 de dezembro de 2026.">
+  <title>Luana & Jucemar | Nosso Casamento</title>
+  <style>
+    :root{
+      --verde:#68745b; --verde-escuro:#4f5947; --dourado:#b8954c;
+      --creme:#faf8f2; --branco:#fff; --texto:#343832;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--creme);line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    .nav{position:fixed;z-index:10;top:0;left:0;right:0;background:rgba(39,45,35,.88);backdrop-filter:blur(8px);display:flex;justify-content:center;gap:28px;padding:14px 12px;color:#fff;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+    .nav a:hover{color:#e1c77f}
+    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:100px 20px 50px;position:relative;overflow:hidden;background:
+      linear-gradient(rgba(38,45,35,.35),rgba(38,45,35,.62)),
+      url("capa.png") center/cover no-repeat;}
+    .hero-inner{max-width:850px}
+    .monogram{font-size:40px;color:#d4b96d;margin-bottom:15px}
+    .hero h1{font-size:clamp(58px,10vw,105px);line-height:.9;margin:0;font-weight:400;font-style:italic;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+    .hero .amp{font-size:36px;color:#e1c77f;display:block;margin:10px}
+    .hero .date{font-size:21px;letter-spacing:.18em;text-transform:uppercase;margin-top:28px}
+    .hero .verse{font-size:17px;margin-top:18px}
+    section{padding:78px 20px}
+    .wrap{max-width:1050px;margin:auto}
+    .section-title{text-align:center;color:var(--verde);font-size:34px;font-weight:400;margin:0 0 10px}
+    .ornament{text-align:center;color:var(--dourado);font-size:25px;margin-bottom:34px}
+    .countdown{background:#fff;text-align:center}
+    .count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px;margin:auto}
+    .count-box{padding:20px 8px;border-right:1px solid #ddd}
+    .count-box:last-child{border:0}
+    .count-num{font-size:48px;color:var(--dourado);line-height:1}
+    .count-label{font-family:Arial,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-top:8px}
+    .story-grid,.ceremony-grid,.gift-grid,.rsvp-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .story-text{text-align:center;font-size:17px}
+    .photo{width:100%;border-radius:18px;border:4px solid #c7aa60;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+    .card{background:#fff;padding:36px;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.07);text-align:center}
+    .details{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .detail{padding:25px 10px;border-right:1px solid #ddd}
+    .detail:last-child{border:0}
+    .icon{font-size:31px;color:var(--dourado);margin-bottom:8px}
+    .detail h3{margin:5px 0;color:var(--verde);font-size:19px;font-weight:400}
+    .btn{display:inline-block;background:var(--verde);color:#fff;padding:14px 24px;border-radius:9px;margin-top:18px;font-family:Arial,sans-serif;font-weight:700;letter-spacing:.03em}
+    .btn.gold{background:var(--dourado)}
+    .btn:hover{opacity:.9;transform:translateY(-1px)}
+    .gift-list{text-align:left;margin:20px auto;max-width:480px}
+    .gift-list li{margin:10px 0}
+    .note{font-family:Arial,sans-serif;font-size:13px;color:#666;margin-top:15px}
+    .rsvp{background:#eef0e9}
+    .rsvp-form{display:grid;gap:12px;text-align:left}
+    input,textarea{width:100%;padding:14px;border:1px solid #d4d6ce;border-radius:8px;font:inherit;background:#fff}
+    textarea{min-height:100px;resize:vertical}
+    footer{background:var(--verde-escuro);color:#fff;text-align:center;padding:55px 20px}
+    footer .initials{font-size:42px;color:#d4b96d;font-style:italic}
+    footer p{margin:7px 0}
+    .small{font-family:Arial,sans-serif;font-size:12px;opacity:.8}
+    @media(max-width:760px){
+      .nav{gap:12px;font-size:9px;overflow-x:auto;justify-content:flex-start}
+      .hero{min-height:82vh}
+      .story-grid,.ceremony-grid,.gift-grid,.rsvp-grid{grid-template-columns:1fr;gap:28px}
+      .count-grid{grid-template-columns:repeat(2,1fr)}
+      .count-box:nth-child(2){border-right:0}
+      .details{grid-template-columns:1fr}
+      .detail{border-right:0;border-bottom:1px solid #ddd}
+      section{padding:60px 16px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#inicio">Início</a>
+  <a href="#historia">Nossa história</a>
+  <a href="#cerimonia">Cerimônia</a>
+  <a href="#presentes">Presentes</a>
+  <a href="#rsvp">Presença</a>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="hero-inner">
+    <div class="monogram">LJ</div>
+    <h1>Luana <span class="amp">&amp;</span> Jucemar</h1>
+    <div class="date">05 de dezembro de 2026 · 16h00</div>
+    <div class="verse">“O amor é paciente, o amor é bondoso.”<br>1 Coríntios 13:4</div>
+  </div>
+</header>
+
+<section class="countdown">
+  <div class="wrap">
+    <h2 class="section-title">Estamos contando os dias!</h2>
+    <div class="ornament">— ♥ —</div>
+    <div class="count-grid">
+      <div class="count-box"><div class="count-num" id="days">--</div><div class="count-label">Dias</div></div>
+      <div class="count-box"><div class="count-num" id="hours">--</div><div class="count-label">Horas</div></div>
+      <div class="count-box"><div class="count-num" id="minutes">--</div><div class="count-label">Minutos</div></div>
+      <div class="count-box"><div class="count-num" id="seconds">--</div><div class="count-label">Segundos</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap story-grid">
+    <div class="story-text">
+      <h2 class="section-title">Nossa história</h2>
+      <div class="ornament">— ♥ —</div>
+      <p>O nosso amor nos trouxe até aqui, e agora queremos celebrar esse novo capítulo ao lado das pessoas que fazem parte da nossa história.</p>
+      <p>Estamos muito felizes em compartilhar este dia tão especial com vocês.</p>
+      <p><strong>Que a nossa união seja sempre guiada pelo amor, companheirismo e fé.</strong></p>
+    </div>
+    <img class="photo" src="capa.png" alt="Luana e Jucemar">
+  </div>
+</section>
+
+<section id="cerimonia" style="background:#fff">
+  <div class="wrap">
+    <h2 class="section-title">Cerimônia</h2>
+    <div class="ornament">— ♥ —</div>
+    <div class="card">
+      <div class="details">
+        <div class="detail">
+          <div class="icon">♡</div>
+          <h3>Data</h3>
+          <div>05 de dezembro de 2026<br>sábado</div>
+        </div>
+        <div class="detail">
+          <div class="icon">◷</div>
+          <h3>Horário</h3>
+          <div>16h00</div>
+        </div>
+        <div class="detail">
+          <div class="icon">⌂</div>
+          <h3>Local</h3>
+          <div>Igreja Matriz Imaculada Conceição<br>Borrazópolis · PR</div>
+        </div>
+      </div>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Igreja+Matriz+Imaculada+Conceicao+Borrazopolis+PR" target="_blank" rel="noopener">📍 Ver no mapa</a>
+    </div>
+  </div>
+</section>
+
+<section id="presentes">
+  <div class="wrap gift-grid">
+    <div class="card">
+      <div style="font-size:58px;color:#8b987b">♡</div>
+      <h2 class="section-title">Lista de presentes</h2>
+      <div class="ornament">— ♥ —</div>
+      <p>A presença de vocês já é o nosso maior presente!</p>
+      <p>Para quem desejar nos presentear, escolhemos uma lista em dinheiro para nos ajudar a realizar nossos sonhos e construir o nosso futuro juntos.</p>
+      <!-- TROQUE O # PELO LINK DA SUA LISTA -->
+      <a class="btn gold" href="#" onclick="alert('Aqui será colocado o link da lista de presentes.');return false;">🎁 Acessar lista de presentes</a>
+      <p class="note">Assim que você criar a lista, substitua o link do botão pelo endereço recebido.</p>
+    </div>
+    <div class="card">
+      <h2 class="section-title" style="font-size:27px">Como funciona?</h2>
+      <ul class="gift-list">
+        <li>Escolha o valor ou o presente simbólico que deseja oferecer.</li>
+        <li>Faça o pagamento pela plataforma da lista.</li>
+        <li>O valor será convertido em dinheiro para nós, conforme as regras da plataforma.</li>
+      </ul>
+      <p><em>“Obrigado por fazer parte desse momento e por todo o carinho!”</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="rsvp" id="rsvp">
+  <div class="wrap rsvp-grid">
+    <div>
+      <h2 class="section-title">Confirmação de presença</h2>
+      <div class="ornament">— ♥ —</div>
+      <p>Queremos muito celebrar com você! Confirme sua presença para nos ajudar na organização do casamento.</p>
+      <!-- TROQUE O LINK ABAIXO PELO SEU WHATSAPP -->
+      <a class="btn" href="#" onclick="alert('Aqui será colocado o WhatsApp de confirmação.');return false;">💬 Confirmar presença pelo WhatsApp</a>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--verde);font-weight:400;font-size:25px">Até o grande dia! 💍</h3>
+      <p>Estamos preparando tudo com muito carinho para receber vocês.</p>
+      <p><strong>Luana &amp; Jucemar</strong></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="initials">LJ</div>
+  <p>“Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.”</p>
+  <p>Colossenses 3:14</p>
+  <p style="margin-top:24px;font-size:22px;font-style:italic">Com amor, Luana &amp; Jucemar</p>
+  <p class="small">05.12.2026 · Borrazópolis/PR</p>
+</footer>
+
+<script>
+  // Contagem regressiva para 05/12/2026 às 16:00 no horário de Brasília.
+  const target = new Date("2026-12-05T16:00:00-03:00").getTime();
+
+  function updateCountdown(){
+    const now = Date.now();
+    let diff = target - now;
+    if(diff < 0) diff = 0;
+
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+
+    document.getElementById("days").textContent = String(days).padStart(2,"0");
+    document.getElementById("hours").textContent = String(hours).padStart(2,"0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2,"0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2,"0");
+  }
+  updateCountdown();
+  setInterval(updateCountdown,1000);
+</script>
+</body>
+</html>
